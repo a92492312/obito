@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.RenderLayerParent;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.resources.ResourceLocation;
 
 public class KamuiOverlayLayer extends RenderLayer<AbstractClientPlayer, PlayerModel<AbstractClientPlayer>> {
 
@@ -25,12 +25,8 @@ public class KamuiOverlayLayer extends RenderLayer<AbstractClientPlayer, PlayerM
 
     @Override
     public void render(PoseStack poseStack, MultiBufferSource bufferSource, int packedLight,
-                       LivingEntity entity, float limbSwing, float limbSwingAmount,
+                       AbstractClientPlayer player, float limbSwing, float limbSwingAmount,
                        float partialTick, float ageInTicks, float netHeadYaw, float headPitch) {
-
-        if (!(entity instanceof AbstractClientPlayer player)) {
-            return;
-        }
 
         int style = KamuiData.getEyeStyle(player);
         ResourceLocation texture = setup.textureFor(style);

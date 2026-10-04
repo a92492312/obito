@@ -1,6 +1,6 @@
 package net.mcreator.odito.kamui;
 
-import net.minecraft.client.renderer.entity.PlayerRenderer;
+import net.minecraft.client.renderer.entity.player.PlayerRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -12,13 +12,12 @@ public class KamuiClientSetup {
 
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.AddLayers event) {
-        if (event.getRenderer() instanceof PlayerRenderer playerRenderer) {
-            playerRenderer.addLayer(new KamuiOverlayLayer(playerRenderer, new KamuiClientSetup()));
+        // Проходим по всем скинам игрока (default и slim) — так слой точно добавится всем
+        for (String skin : event.getSkins()) {
+            if (event.getSkin(skin) instanceof PlayerRenderer renderer) {
+                renderer.addLayer(new KamuiOverlayLayer(renderer, new KamuiClientSetup()));
+            }
         }
-    }
-
-    public KamuiClientSetup() {
-        // Пустой конструктор
     }
 
     public ResourceLocation textureFor(int style) {
@@ -26,7 +25,9 @@ public class KamuiClientSetup {
             case 1:
                 return new ResourceLocation("odito", "textures/entity/sharingan_obito_overlay.png");
             case 2:
-                return new ResourceLocation("odito", "textures/entity/mangekyo_obito_overlay.png");
+                return new ResourceLocation("odito", "textures/entity/rinnegan_obito_overlay.png");
+            case 3:
+                return new ResourceLocation("odito", "textures/entity/kamui_obito_overlay.png");
             default:
                 return null;
         }
