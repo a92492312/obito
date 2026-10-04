@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/water_flow",
+    "up": "minecraft:block/water_flow",
+    "north": "minecraft:block/water_flow",
+    "east": "minecraft:block/water_flow",
+    "south": "minecraft:block/water_flow",
+    "west": "minecraft:block/water_flow",
+    "particle": "minecraft:block/water_flow"
+  },
+  "render_type": "solid"
+}

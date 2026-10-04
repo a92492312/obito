@@ -1,0 +1,256 @@
+{
+  "mod_elements": [
+    {
+      "name": "KamuiBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kamui_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odito/blockstates/kamui_block.json",
+          "src/main/resources/assets/odito/models/block/kamui_block.json",
+          "src/main/resources/data/odito/loot_tables/blocks/kamui_block.json",
+          "src/main/resources/assets/odito/models/item/kamui_block.json",
+          "src/main/java/net/mcreator/odito/block/KamuiBlockBlock.java"
+        ]
+      },
+      "path": "~/kamui"
+    },
+    {
+      "name": "KamuiVoid",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kamui_void",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/odito/worldgen/configured_feature/kamui_void_tree.json",
+          "src/main/resources/data/odito/worldgen/biome/kamui_void.json",
+          "src/main/resources/data/odito/worldgen/placed_feature/kamui_void_tree.json"
+        ]
+      },
+      "path": "~/kamui"
+    },
+    {
+      "name": "FekewaterBlockAddedProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fekewater_block_added_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/odito/procedures/FekewaterBlockAddedProcedureProcedure.java"
+        ]
+      },
+      "path": "~/ninjutsu/waterSurfing"
+    },
+    {
+      "name": "Walkingonwater",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "walkingonwater",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/odito/procedures/WalkingonwaterProcedure.java"
+        ]
+      },
+      "path": "~/ninjutsu/waterSurfing"
+    },
+    {
+      "name": "Fekewater",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fekewater",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/odito/blockstates/fekewater.json",
+          "src/main/resources/assets/odito/models/block/fekewater.json",
+          "src/main/resources/assets/odito/models/item/fekewater.json",
+          "src/main/java/net/mcreator/odito/block/FekewaterBlock.java",
+          "src/main/resources/data/odito/loot_tables/blocks/fekewater.json"
+        ]
+      },
+      "path": "~/ninjutsu/waterSurfing"
+    },
+    {
+      "name": "WaterSurfingOnEffectActiveTickProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_surfing_on_effect_active_tick_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/odito/procedures/WaterSurfingOnEffectActiveTickProcedureProcedure.java"
+        ]
+      },
+      "path": "~/ninjutsu/waterSurfing"
+    },
+    {
+      "name": "WaterSurfing",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_surfing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odito/potion/WaterSurfingMobEffect.java"
+        ]
+      },
+      "path": "~/ninjutsu/waterSurfing"
+    },
+    {
+      "name": "ObitoEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obito_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odito/potion/ObitoEffectMobEffect.java"
+        ]
+      },
+      "path": "~/ninjutsu"
+    },
+    {
+      "name": "KamuiDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kamui_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/odito/world/dimension/KamuiDimensionDimension.java",
+          "src/main/resources/data/odito/dimension/kamui_dimension.json",
+          "src/main/resources/data/odito/dimension_type/kamui_dimension.json"
+        ]
+      },
+      "path": "~/kamui"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:KamuiBlock"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.odito.kamui_block": "Kamui Block",
+      "biome.odito.kamui_void": "Kamui Void",
+      "block.odito.fekewater": "Fekewater",
+      "effect.odito.water_surfing": "Water Surfing",
+      "effect.odito.obito_effect": "Obito Effect"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/odito/init/OditoModBiomes.java",
+      "src/main/java/net/mcreator/odito/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/odito/init/OditoModMobEffects.java",
+      "src/main/java/net/mcreator/odito/init/OditoModBlocks.java",
+      "src/main/java/net/mcreator/odito/init/OditoModItems.java",
+      "src/main/resources/odito.mixins.json",
+      "src/main/java/net/mcreator/odito/OditoMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "kamui",
+        "children": []
+      },
+      {
+        "name": "ninjutsu",
+        "children": [
+          {
+            "name": "waterSurfing",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "odito",
+    "modName": "odito",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.odito"
+  },
+  "mcreatorVersion": 202600114619
+}

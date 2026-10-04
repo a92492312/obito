@@ -1,0 +1,15 @@
+{
+  "type": "odito:kamui_dimension_type",
+  "generator": {
+    "type": "odito:kamui",
+    "biome_source": {
+      "type": "minecraft:checkerboard",
+      "biomes": [
+        "odito:kamui_low",
+        "odito:kamui_mid",
+        "odito:kamui_high"
+      ],
+      "scale": 1
+    }
+  }
+}

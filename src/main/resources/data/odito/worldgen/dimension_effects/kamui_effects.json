@@ -1,0 +1,7 @@
+{
+  "sky_color": [20, 10, 30],
+  "fog_color": [15, 5, 20],
+  "ambient_light": 0.4,
+  "weather_cycle": false,
+  "day_light_cycle": false
+}

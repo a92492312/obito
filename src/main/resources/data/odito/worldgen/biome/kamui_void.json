@@ -1,0 +1,42 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.0,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "creature_spawn_probability": 0.0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 2828338,
+    "fog_color": 1708501,
+    "water_color": 3804490,
+    "water_fog_color": 1708501,
+    "grass_color": 2828338,
+    "foliage_color": 2828338,
+    "ambient_particle": {
+      "options": { "type": "minecraft:portal" },
+      "probability": 0.01
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "spawn_cost_biases": {},
+  "carvers": {
+    "air": [],
+    "liquid": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "odito:kamui_column"
+    ]
+  ]
+}
